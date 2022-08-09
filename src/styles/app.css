@@ -178,21 +178,21 @@
 .about-start {
   opacity: 0%;
   color: white;
-  width: 50%;
+  width: 7.5rem;
   height: auto;
 }
 
 .resume-start {
   opacity: 0%;
   color: white;
-  width: 50%;
+  width: 8rem;
   height: auto;
 }
 
 .projects-img-start {
   opacity: 0%;
   color: white;
-  width: 65%;
+  width: 8rem;
   height: auto;
 }
 
@@ -249,5 +249,4 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
   width: 40vw;
-
 }

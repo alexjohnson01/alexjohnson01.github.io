@@ -8,8 +8,6 @@ export default function Header({
   about,
   setAbout,
 }) {
-  //State
-
   //Functions
   function projectsHandler() {
     setProjects("../media/photo/ProjectsUnderline.jpg");
