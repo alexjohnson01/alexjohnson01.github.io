@@ -4,10 +4,24 @@ import Project from "../components/Project";
 //Import Styles
 import "../styles/app.css";
 
-export default function Projects({ currentPage, setCurrentPage }) {
+export default function Projects({
+  projects,
+  setProjects,
+  resume,
+  setResume,
+  about,
+  setAbout,
+}) {
   return (
     <div className="main">
-      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <Header
+        projects={projects}
+        setProjects={setProjects}
+        resume={resume}
+        setResume={setResume}
+        about={about}
+        setAbout={setAbout}
+      />
       <div className="projects-container">
         <Project
           projectName="Skateflix"

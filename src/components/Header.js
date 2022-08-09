@@ -1,6 +1,31 @@
 import { Link } from "react-router-dom";
 
-export default function Header({ currentPage, setCurrentPage }) {
+export default function Header({
+  projects,
+  setProjects,
+  resume,
+  setResume,
+  about,
+  setAbout,
+}) {
+  //State
+
+  //Functions
+  function projectsHandler() {
+    setProjects("../media/photo/ProjectsUnderline.jpg");
+    setResume("../media/photo/Resume.jpg");
+    setAbout("../media/photo/About.jpg");
+  }
+  function resumeHandler() {
+    setProjects("../media/photo/Projects.jpg");
+    setResume("../media/photo/ResumeUnderline.jpg");
+    setAbout("../media/photo/About.jpg");
+  }
+  function aboutHandler() {
+    setProjects("../media/photo/Projects.jpg");
+    setResume("../media/photo/Resume.jpg");
+    setAbout("../media/photo/AboutUnderline.jpg");
+  }
   return (
     <div className="header-container">
       <img
@@ -10,26 +35,14 @@ export default function Header({ currentPage, setCurrentPage }) {
         className="banner-img"
       />
       <div className="header-stay">
-        <Link className="link" to="/projects">
-          <img
-            src={"../media/photo/Projects.jpg"}
-            alt="Projects"
-            className="projects-img"
-          />
+        <Link className="link" to="/projects" onClick={projectsHandler}>
+          <img src={projects} alt="Projects" className="projects-img" />
         </Link>
-        <Link className="link" to="/resume" >
-          <img
-            src={"../media/photo/Resume.jpg"}
-            alt="Resume"
-            className="resume"
-          />
+        <Link className="link" to="/resume" onClick={resumeHandler}>
+          <img src={resume} alt="Resume" className="resume" />
         </Link>
-        <Link className="link" to="/about">
-          <img
-            src={"../media/photo/About.jpg"}
-            alt="About"
-            className="about"
-          />
+        <Link className="link" to="/about" onClick={aboutHandler}>
+          <img src={about} alt="About" className="about" />
         </Link>
       </div>
     </div>

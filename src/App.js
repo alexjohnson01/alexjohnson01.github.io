@@ -14,7 +14,9 @@ function App() {
   //State
   const [slide, setSlide] = useState(false);
   const [appear, setAppear] = useState(false);
-  const [currentPage, setCurrentPage] = useState();
+  const [projects, setProjects] = useState("../media/photo/Projects.jpg");
+  const [resume, setResume] = useState("../media/photo/Resume.jpg");
+  const [about, setAbout] = useState("../media/photo/About.jpg");
   return (
     <div className="app">
       <Routes>
@@ -26,8 +28,12 @@ function App() {
               setSlide={setSlide}
               appear={appear}
               setAppear={setAppear}
-              currentPage={currentPage}
-              setCurrentPage={setCurrentPage}
+              projects={projects}
+              setProjects={setProjects}
+              resume={resume}
+              setResume={setResume}
+              about={about}
+              setAbout={setAbout}
             />
           }
         />
@@ -36,8 +42,12 @@ function App() {
           element={
             <Projects
               appear={appear}
-              currentPage={currentPage}
-              setCurrentPage={setCurrentPage}
+              projects={projects}
+              setProjects={setProjects}
+              resume={resume}
+              setResume={setResume}
+              about={about}
+              setAbout={setAbout}
             />
           }
         />
@@ -46,8 +56,12 @@ function App() {
           element={
             <Resume
               appear={appear}
-              currentPage={currentPage}
-              setCurrentPage={setCurrentPage}
+              projects={projects}
+              setProjects={setProjects}
+              resume={resume}
+              setResume={setResume}
+              about={about}
+              setAbout={setAbout}
             />
           }
         />
@@ -56,8 +70,12 @@ function App() {
           element={
             <About
               appear={appear}
-              currentPage={currentPage}
-              setCurrentPage={setCurrentPage}
+              projects={projects}
+              setProjects={setProjects}
+              resume={resume}
+              setResume={setResume}
+              about={about}
+              setAbout={setAbout}
             />
           }
         />
