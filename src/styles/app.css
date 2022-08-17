@@ -28,6 +28,7 @@
 }
 
 .enter-btn {
+  z-index: 3;
   outline: none;
   background: none;
   border: 3px dotted rgb(227, 43, 43);
@@ -40,6 +41,7 @@
 }
 
 .enter-btn:active {
+  z-index: 3;
   outline: none;
   background: none;
   border: 3px dotted rgb(227, 43, 43);
@@ -150,6 +152,15 @@
   height: 100vh;
   justify-content: flex-start;
   margin-bottom: 7rem;
+}
+
+.pick-one {
+  position: absolute;
+  opacity: 0%;
+  height: 25rem;
+  margin: 0;
+  margin-top: 20rem;
+  padding: 0;
 }
 
 .buttons {
