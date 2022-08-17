@@ -25,7 +25,7 @@ export default function Projects({
       <div className="projects-container">
         <Project
           projectName="Skateflix"
-          imageLink="../media/photo/Skateflix.jpg"
+          imageLink="../media/photo/SkateflixGif.gif"
           liveLink="https://skateflix.life"
           gitLink="https://github.com/alexjohnson01/Skateflix"
         />
